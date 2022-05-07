@@ -1,0 +1,27 @@
+$date
+	Thu May 05 10:17:36 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top_not_testbench $end
+$var wire 1 ! out0 $end
+$var reg 1 " in0 $end
+$scope module top_not_instance $end
+$var wire 1 ! LED_G $end
+$var wire 1 " SW $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0"
+1!
+$end
+#10
+0!
+1"
+#20

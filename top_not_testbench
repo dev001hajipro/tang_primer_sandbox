@@ -1,0 +1,39 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001f446a89c10 .scope module, "top_not_testbench" "top_not_testbench" 2 1;
+ .timescale 0 0;
+v000001f446ad6520_0 .var "in0", 0 0;
+v000001f446ad65c0_0 .net "out0", 0 0, L_000001f446aa3530;  1 drivers
+S_000001f446ad6390 .scope module, "top_not_instance" "top_not" 2 7, 3 1 0, S_000001f446a89c10;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "SW";
+    .port_info 1 /OUTPUT 1 "LED_G";
+L_000001f446aa3530 .functor NOT 1, v000001f446ad6520_0, C4<0>, C4<0>, C4<0>;
+v000001f446aa3690_0 .net "LED_G", 0 0, L_000001f446aa3530;  alias, 1 drivers
+v000001f446aa32b0_0 .net "SW", 0 0, v000001f446ad6520_0;  1 drivers
+    .scope S_000001f446a89c10;
+T_0 ;
+    %vpi_call 2 11 "$dumpfile", "top_not_testbench.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001f446a89c10 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000001f446ad6520_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000001f446ad6520_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 17 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    ".\top_not_testbench.v";
+    ".\top_not.v";

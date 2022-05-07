@@ -1,0 +1,48 @@
+$date
+	Thu May 05 13:54:23 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top_or_testbench $end
+$var wire 1 ! out0 $end
+$var reg 1 " in0 $end
+$var reg 1 # in1 $end
+$scope module top_or_instance $end
+$var wire 1 $ IN_A $end
+$var wire 1 % IN_B $end
+$var wire 1 # JMP_W $end
+$var wire 1 ! LED_G $end
+$var wire 1 & OUT_Y $end
+$var wire 1 " SW $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1&
+0%
+1$
+0#
+0"
+0!
+$end
+#10
+1!
+0&
+0$
+1"
+#20
+0!
+1&
+1$
+1%
+1#
+0"
+#30
+0$
+1"
+#40
